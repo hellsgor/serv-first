@@ -1,3 +1,4 @@
+import Counter from './components/Counter';
 import { ROUTES } from './config/routes';
 import { Link, Outlet } from 'react-router';
 
@@ -6,7 +7,7 @@ export default function Layout() {
     <>
     <header>
       <nav>
-        <ul>
+        <ul role='list' style={{display: 'flex', columnGap: '32px', justifyContent: 'center'}}>
           {Object.entries(ROUTES).map(([key, value]) => 
             <li key={key}>
               <Link to={value}>{key}</Link>
@@ -16,6 +17,7 @@ export default function Layout() {
     </header>
     <main>
       <Outlet/>
+      <Counter/>
     </main>
     </>
   )
