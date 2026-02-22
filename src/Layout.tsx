@@ -1,4 +1,3 @@
-import type { ReactNode } from 'react';
 import { ROUTES } from './config/routes';
 import { Link, Outlet } from 'react-router';
 
