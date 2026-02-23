@@ -34,4 +34,4 @@ jobs:
           SOURCE: dist/
           TARGET:
             /var/www/serv-first/${{ github.ref == 'refs/heads/main' && 'prod' ||
-            (github.ref == 'refs/heads/stage' && 'stage' || 'develop') }}
+            (github.ref == 'refs/heads/stage' && 'stage' || 'dev') }}
